@@ -1,0 +1,23 @@
+
+//Using Left shift operator, we can write 2i as 1 << i . Therefore:
+
+bool check (int N)
+{
+        if( N & (1 << i) )
+            return true;
+        else
+            return false;
+}
+    
+    
+
+int main()
+{
+    fastIO
+    
+    int x = 15;
+    cout<< check(x);
+        
+	return 0;
+
+}
