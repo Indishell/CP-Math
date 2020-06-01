@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define fastIO ios_base::sync_with_stdio(false);cin.tie(NULL); cout.tie(NULL);
+#define ll long long
+const ll MOD  = 1000000007;
+
+
+Time Complexity: O(C), C is the count of 1 in Binary Representatiom.
+
+int countOnes(int x)
+{
+    
+    int count = 0;
+    
+    while(x)
+    {
+        x = x & (x - 1);
+        count++;
+    }
+    
+    return count;
+    
+}
+
+
+
+
+int main()
+{
+    fastIO
+    
+    int x = 15;
+    
+    
+    cout<< countOnes(x);
+        
+	return 0;
+
+}
