@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define fastIO ios_base::sync_with_stdio(false);cin.tie(NULL); cout.tie(NULL);
+#define ll long long
+const ll MOD  = 1000000007;
+
+bool isPowerofTwo(int x)
+{
+    if(x == 0)  return  false;
+    
+    else
+    {
+        while(x%2 == 0) 
+            x /= 2;
+        return(x == 1);
+    }
+}
+
+
+bool isPowerofTwo(int x)
+{
+    return (x &&  !(x&(x - 1)));
+}
+
+//if x & (x - 1) == 0 then it is a Power of 2.
+
+int main()
+{
+    fastIO
+    
+    int x = 15;
+    
+    if(isPowerofTwo(x))
+        cout<< "YES" <<"\n";
+        
+    else
+        cout <<"NO"<<"\n";
+        
+	return 0;
+
+}
